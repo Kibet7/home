@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a7e07; /* Safaricom green color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .payment-info {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: olivedrab;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .image-popup {
+            margin-top: 20px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        .image-popup img {
+            width: 100px;
+            height: auto;
+        }
+        .image-popup.show {
+            opacity: 1.5;
+            transform: scale(1);
+        }
+    </style>
+    <script>
+        function showPaymentPrompt(amount) {
+            alert(`Pay Ksh ${amount} to till 3132426`);
+            const imagePopup = document.querySelector('.image-popup');
+            imagePopup.classList.add('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a Package</h1>
+        <div class="payment-info">starlink home <i>only Safaricom</i></div>
+        <button onclick="showPaymentPrompt(200)">7 Days - 10GB (Ksh 200)</button>
+        <button onclick="showPaymentPrompt(350)">21 Days - 50GB (Ksh 350)</button>
+        <button onclick="showPaymentPrompt(400)">40 Days - Unlimited (Ksh 400)</button>
+        <div class="image-popup">
+            <img src="images/till.jpeg" alt="Payment Image">
+        </div>
+    </div>
+</body>
+</html>

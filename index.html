@@ -163,6 +163,33 @@
             padding: 20px;
             margin-top: 40px;
         }
+        .copy-btn {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .copy-btn:hover {
+            background-color: #e67e22;
+        }
+        .till-number {
+            font-weight: bold;
+            color: #2c3e50;
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .success-message {
+            color: #27ae60;
+            font-size: 12px;
+            margin-left: 5px;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -187,28 +214,29 @@
             <div class="offer-container">
                 <div class="offer-card">
                     <div class="offer-name">Daily Bundle</div>
-                    <div class="offer-price">KSh 50</div>
-                    <div class="offer-details">500MB + 50 SMS</div>
-                    <button class="buy-btn" onclick="openModal('Daily Bundle', '50')">Buy Now</button>
+                    <div class="offer-price">KSh 20</div>
+                    <div class="offer-details">500MB + 20 SMS</div>
+                    <button class="buy-btn" onclick="openModal('Daily Bundle', '20')">Buy Now</button>
                 </div>
                 <div class="offer-card">
                     <div class="offer-name">Weekly Bundle</div>
-                    <div class="offer-price">KSh 200</div>
-                    <div class="offer-details">2GB + 100 SMS</div>
-                    <button class="buy-btn" onclick="openModal('Weekly Bundle', '200')">Buy Now</button>
+                    <div class="offer-price">KSh 50</div>
+                    <div class="offer-details">2GB  (7 days)</div>
+                    <button class="buy-btn" onclick="openModal('Weekly Bundle', '50')">Buy Now</button>
+                </div>                
+                <div class="offer-card">
+                    <div class="offer-name">Weekly Bundle</div>
+                    <div class="offer-price">KSh 150</div>
+                    <div class="offer-details">3.5GB + 1000 SMS</div>
+                    <button class="buy-btn" onclick="openModal('Weekly Bundle', '150')">Buy Now</button>
                 </div>
                 <div class="offer-card">
                     <div class="offer-name">Monthly Bundle</div>
-                    <div class="offer-price">KSh 1000</div>
-                    <div class="offer-details">10GB + 500 SMS</div>
-                    <button class="buy-btn" onclick="openModal('Monthly Bundle', '1000')">Buy Now</button>
+                    <div class="offer-price">KSh 200</div>
+                    <div class="offer-details">3GB + 1000 SMS</div>
+                    <button class="buy-btn" onclick="openModal('Monthly Bundle', '200')">Buy Now</button>
                 </div>
-                <div class="offer-card">
-                    <div class="offer-name">YouTube Bundle</div>
-                    <div class="offer-price">KSh 150</div>
-                    <div class="offer-details">3GB YouTube (7 days)</div>
-                    <button class="buy-btn" onclick="openModal('YouTube Bundle', '150')">Buy Now</button>
-                </div>
+
             </div>
         </div>
 
@@ -216,28 +244,28 @@
             <h2>Voice Minutes</h2>
             <div class="offer-container">
                 <div class="offer-card">
-                    <div class="offer-name">30 Minutes</div>
-                    <div class="offer-price">KSh 50</div>
+                    <div class="offer-name">30 Minutes (TILL MIDNIGHT) </div>
+                    <div class="offer-price">KSh 10</div>
                     <div class="offer-details">All networks</div>
-                    <button class="buy-btn" onclick="openModal('30 Minutes', '50')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('30 Minutes', '10')">Buy Now</button>
                 </div>
                 <div class="offer-card">
-                    <div class="offer-name">60 Minutes</div>
-                    <div class="offer-price">KSh 90</div>
+                    <div class="offer-name">60 Minutes (24 Hours)</div>
+                    <div class="offer-price">KSh 49</div>
                     <div class="offer-details">All networks</div>
-                    <button class="buy-btn" onclick="openModal('60 Minutes', '90')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('60 Minutes', '49')">Buy Now</button>
                 </div>
                 <div class="offer-card">
-                    <div class="offer-name">120 Minutes</div>
-                    <div class="offer-price">KSh 150</div>
+                    <div class="offer-name">150 Minutes (3 Days)</div>
+                    <div class="offer-price">KSh 199</div>
                     <div class="offer-details">All networks</div>
-                    <button class="buy-btn" onclick="openModal('120 Minutes', '150')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('150 Minutes', '199')">Buy Now</button>
                 </div>
                 <div class="offer-card">
-                    <div class="offer-name">300 Minutes</div>
-                    <div class="offer-price">KSh 300</div>
+                    <div class="offer-name">1000 Minutes(30 Days)</div>
+                    <div class="offer-price">KSh 499</div>
                     <div class="offer-details">All networks</div>
-                    <button class="buy-btn" onclick="openModal('300 Minutes', '300')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('1000 Minutes', '499')">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -246,28 +274,28 @@
             <h2>SMS Offers</h2>
             <div class="offer-container">
                 <div class="offer-card">
-                    <div class="offer-name">50 SMS</div>
-                    <div class="offer-price">KSh 10</div>
+                    <div class="offer-name">200 SMS</div>
+                    <div class="offer-price">KSh 7</div>
                     <div class="offer-details">Valid for 1 day</div>
-                    <button class="buy-btn" onclick="openModal('50 SMS', '10')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('200 SMS', '7')">Buy Now</button>
                 </div>
                 <div class="offer-card">
-                    <div class="offer-name">100 SMS</div>
-                    <div class="offer-price">KSh 20</div>
-                    <div class="offer-details">Valid for 3 days</div>
-                    <button class="buy-btn" onclick="openModal('100 SMS', '20')">Buy Now</button>
-                </div>
-                <div class="offer-card">
-                    <div class="offer-name">500 SMS</div>
-                    <div class="offer-price">KSh 50</div>
+                    <div class="offer-name">1000 SMS </div>
+                    <div class="offer-price">KSh 21</div>
                     <div class="offer-details">Valid for 7 days</div>
-                    <button class="buy-btn" onclick="openModal('500 SMS', '50')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('1000 SMS', '21')">Buy Now</button>
                 </div>
                 <div class="offer-card">
                     <div class="offer-name">Unlimited SMS</div>
-                    <div class="offer-price">KSh 100</div>
+                    <div class="offer-price">KSh 49</div>
                     <div class="offer-details">Valid for 7 days</div>
-                    <button class="buy-btn" onclick="openModal('Unlimited SMS', '100')">Buy Now</button>
+                    <button class="buy-btn" onclick="openModal('Unlimited SMS', '49')">Buy Now</button>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-name">Unlimited SMS</div>
+                    <div class="offer-price">KSh 149</div>
+                    <div class="offer-details">Valid for 30 days</div>
+                    <button class="buy-btn" onclick="openModal('Unlimited SMS', '149')">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -283,12 +311,14 @@
                 
                 <div class="form-group">
                     <label for="recipient-number">Recipient Phone Number:</label>
-                    <input type="tel" id="recipient-number" placeholder="e.g. 2547XXXXXXXX" required>
+                    <input type="tel" id="recipient-number" placeholder="e.g. 0712345678 or 254712345678" required>
+                    <small style="color: #7f8c8d;">Format: 07..., 01..., or 254...</small>
                 </div>
                 
                 <div class="form-group">
                     <label for="payer-number">Paying Phone Number (M-Pesa):</label>
-                    <input type="tel" id="payer-number" placeholder="e.g. 2547XXXXXXXX" required>
+                    <input type="tel" id="payer-number" placeholder="e.g. 0712345678 or 254712345678" required>
+                    <small style="color: #7f8c8d;">Format: 07..., 01..., or 254...</small>
                 </div>
                 
                 <button type="button" class="submit-btn" onclick="processPayment()">Submit Payment</button>
@@ -306,7 +336,11 @@
                     <li>Go to M-Pesa on your phone</li>
                     <li>Select <strong>Lipa na M-Pesa</strong></li>
                     <li>Select <strong>Buy Goods</strong></li>
-                    <li>Enter Till Number: <strong>4160709</strong></li>
+                    <li>Enter Till Number: 
+                        <span class="till-number" id="tillNumber">4883478</span>
+                        <button class="copy-btn" onclick="copyToClipboard('tillNumber')">Copy</button>
+                        <span class="success-message" id="tillCopySuccess">Copied!</span>
+                    </li>
                     <li>Enter Amount: <strong id="payment-amount">KSh 0</strong></li>
                     <li>Enter your M-Pesa PIN</li>
                     <li>Confirm payment</li>
@@ -319,8 +353,21 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 Bingwa Sokoni. All rights reserved.</p>
-        <p>Customer Support: 0700 000000 | Email: info@bingwasokoni.com</p>
+        <p>&copy; 2025 Safaricom Bingwa Sokoni. All rights reserved.</p>
+        <p>
+            Customer Support: 
+            <a href="https://wa.me/254748605610?text=Hi%2C%20I%20need%20help%20with%20Bingwa%20Sokoni%20offers" 
+               style="color: white; text-decoration: underline;" 
+               target="_blank">
+                whatsaap
+            </a> 
+            | 
+            Email: 
+            <a href="mailto:frankabule101@gmail.com" 
+               style="color: white; text-decoration: underline;">
+                send us email
+            </a>
+        </p>
     </footer>
 
     <script>
@@ -354,8 +401,8 @@
         }
 
         function processPayment() {
-            const recipientNumber = document.getElementById('recipient-number').value;
-            const payerNumber = document.getElementById('payer-number').value;
+            const recipientNumber = document.getElementById('recipient-number').value.trim();
+            const payerNumber = document.getElementById('payer-number').value.trim();
             const price = document.getElementById('selected-price').value;
             
             if (!recipientNumber || !payerNumber) {
@@ -363,9 +410,36 @@
                 return;
             }
             
-            // Validate phone numbers
-            if (!/^254[17]\d{8}$/.test(recipientNumber) || !/^254[17]\d{8}$/.test(payerNumber)) {
-                alert('Please enter valid Kenyan phone numbers starting with 254');
+            // Remove any whitespace or special characters
+            const cleanRecipient = recipientNumber.replace(/[+\s\-]/g, '');
+            const cleanPayer = payerNumber.replace(/[+\s\-]/g, '');
+            
+            // Validate Kenyan phone numbers
+            // Formats allowed: 07XXXXXXXX (10 digits), 01XXXXXXXX (10 digits), 2547XXXXXXX (12 digits)
+            if (!/^(07\d{8}|01\d{8}|2547\d{7})$/.test(cleanRecipient) || 
+                !/^(07\d{8}|01\d{8}|2547\d{7})$/.test(cleanPayer)) {
+                alert('Please enter valid Kenyan phone numbers starting with 07, 01, or 254\n\n' +
+                      'Examples:\n' +
+                      '• 0712345678\n' +
+                      '• 0123456789\n' +
+                      '• 254712345678');
+                return;
+            }
+            
+            // Convert to 254 format if needed
+            let formattedRecipient = cleanRecipient;
+            if (cleanRecipient.startsWith('07') || cleanRecipient.startsWith('01')) {
+                formattedRecipient = '254' + cleanRecipient.substring(1);
+            }
+            
+            let formattedPayer = cleanPayer;
+            if (cleanPayer.startsWith('07') || cleanPayer.startsWith('01')) {
+                formattedPayer = '254' + cleanPayer.substring(1);
+            }
+            
+            // Ensure the final numbers are valid
+            if (formattedRecipient.length !== 12 || formattedPayer.length !== 12) {
+                alert('Please enter valid 10-digit Kenyan numbers (including 07 or 01 prefix)');
                 return;
             }
             
@@ -378,9 +452,40 @@
             console.log(`Processing payment:
                 Offer: ${document.getElementById('selected-offer').value}
                 Price: ${price}
-                Recipient: ${recipientNumber}
-                Payer: ${payerNumber}
+                Recipient: ${formattedRecipient}
+                Payer: ${formattedPayer}
             `);
+        }
+
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const successMsg = document.getElementById(elementId + 'CopySuccess');
+                successMsg.style.display = 'inline';
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    const successMsg = document.getElementById(elementId + 'CopySuccess');
+                    successMsg.style.display = 'inline';
+                    setTimeout(() => {
+                        successMsg.style.display = 'none';
+                    }, 2000);
+                } catch (err) {
+                    console.error('Fallback copy failed: ', err);
+                }
+                document.body.removeChild(textArea);
+            });
         }
 
         // Close modals when clicking outside
@@ -391,4 +496,4 @@
         }
     </script>
 </body>
-    </html>
+</html>
